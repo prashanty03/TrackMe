@@ -46,7 +46,7 @@ function showlocation() {
   navigator.geolocation.watchPosition(callback);
 }
 function callback(position) {
-  if (email != "" && email != undefined) {
+  if (channel != "" && channel != undefined) {
     var pn = PUBNUB.init({
       publish_key: 'demo',
       subscribe_key: 'demo'
